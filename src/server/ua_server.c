@@ -396,8 +396,8 @@ writeNs0VariableArray(UA_Server *server, UA_UInt32 id, void *v,
 
 static void initNamespace0(UA_Server *server) {
 
-	/* Initialize base nodes which are always required an cannot be created through the NS compiler */
-	UA_Server_createNS0_base(server);
+    /* Initialize base nodes which are always required an cannot be created through the NS compiler */
+    UA_Server_createNS0_base(server);
 
     /* Load nodes and references generated from the XML ns0 definition */
     server->bootstrapNS0 = true;
